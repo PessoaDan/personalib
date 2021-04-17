@@ -1,0 +1,34 @@
+#content-frame{
+ min-height: 100vh;
+ background-size: cover;  
+}
+#content{
+    display: flex;
+    justify-content: flex-end;
+}
+#form-frame {
+    padding: 20px;
+    margin-top: 5%;
+    width: 350px;
+    height: 500px;
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 5px 5px 5px #000;
+}
+#logo-frame {
+    text-align: center;
+    margin-bottom: 15%;
+}
+#recovery{
+   justify-content : flex-end;
+}
+.social-login{
+    text-align: left;
+    border-radius: 20px;
+    margin-bottom: 10px;
+}
+#another-options {
+    justify-content: center;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
