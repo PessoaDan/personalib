@@ -1,0 +1,56 @@
+<div class="container-fluid" id="content-frame" [style.background-image]="bg">
+    <div class="container" id="content">
+        <div id="form-frame">
+            <form (submit)="onSubmit()">
+                <div class="form-row"  id="logo-frame">
+                    <section class="col col-md-12"> 
+                        <i class="fas fa-book-open fa-2x"></i> 
+                    </section>
+                    <section class="col col-md-12"> 
+                        <span id="logo-text">PERSONALIB</span> 
+                    </section>
+                </div>
+                <div class="form-row">
+                    <section class="col col-md-12">
+                        <div class="input-group mb-3">
+                            <div class="input-group-prepend">
+                              <span class="input-group-text" id="basic-addon1">
+                                  <i class="fas fa-user-alt"></i>
+                              </span>
+                            </div>
+                            <input type="text" class="form-control" placeholder="Login ou Email" aria-label="Username" aria-describedby="basic-addon1">
+                          </div>
+                    </section>
+                </div>
+                <div class="form-row">
+                    <section class="col col-md-12">
+                        <div class="input-group mb-3">
+                            <div class="input-group-prepend">
+                              <span class="input-group-text" id="basic-addon1">
+                                  <i class="fas fa-lock"></i>
+                              </span>
+                            </div>
+                            <input type="text" class="form-control" placeholder="Senha" aria-label="Username" aria-describedby="basic-addon1">
+                          </div>
+                    </section>
+                </div>
+                <div class="form-row">
+                    <button type="submit" class="btn btn-block btn-primary">
+                        Entrar
+                    </button>
+                </div>
+                <div class="form-row" id="recovery">
+                    <a routerLink="../recovery">Esqueceu sua senha?</a>
+                </div>
+                <div class="form-row" id="recovery"  id="another-options">
+                   - OU - 
+                </div>
+                <div class="form-row">
+                    <button type="submit" class="btn btn-block btn-dark social-login">
+                        <i class="fab fa-google"></i> Entre com Gmail
+                    </button>
+                </div>
+            </form>
+        </div>   
+    </div>
+</div>
