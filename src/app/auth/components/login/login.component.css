@@ -4,7 +4,7 @@
 }
 #content{
     display: flex;
-    justify-content: flex-end;
+    justify-content: center;
 }
 #form-frame {
     padding: 20px;

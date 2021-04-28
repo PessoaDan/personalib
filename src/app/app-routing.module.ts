@@ -1,3 +1,4 @@
+import { WellcomeComponent } from './shared/components/layout/wellcome/wellcome.component';
 import { AuthGuard } from './auth/guards/auth.guard';
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
@@ -13,6 +14,10 @@ const routes: Routes = [
     component: AplicationComponent,
     canActivate: [AuthGuard],
     children: [
+      {
+        path: '',
+        component: WellcomeComponent
+      }
     ]
   }
 ];

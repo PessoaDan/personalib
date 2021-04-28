@@ -1,1 +1,85 @@
-<p>navbar works!</p>
+<div id="nav-container" class=" col-md-12 bg-dark">
+    <div class="col col-md-12" id="nav-frame">
+        <div class="row bg-primary" id="nav-header">
+            <div class="col col-md-12">
+                <p>
+                    <i class="fas fa-book-open"></i>
+                    PERSONALIB
+                </p>
+            </div>
+        </div>
+        <div class="row" id="user-details-frame">
+            <div class="col col-md-2" id="user-icon-frame">
+                <i class="fas fa-user-circle fa-2x"></i>
+            </div>
+            <div class=" col col-md-8 details">
+                <p>{{username}}</p>
+            </div>
+            <div class="col col-md-2 details">
+                <i class="fas fa-angle-down dropper" id="user-details-dropper" data-toggle="dropdown"
+                    aria-haspopup="true" aria-expanded="false"></i>
+                <div class="dropdown-menu dropdown-menu-xl-left bg-dark" aria-labelledby="user-details-dropper"
+                    id="user-details-dropper-itens">
+                    <a class="dropdown-item">
+                        <i class="fas fa-user"></i> Meu Perfil
+                    </a>
+                    <a class="dropdown-item" (click)="logout()">
+                        <i class="fas fa-sign-out-alt"></i> Sir
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <ul class="nav flex-column" id="nav-menu">
+                <li class="nav-item submenu-control"  *ngIf="showAdminMenuItem" (click)="registrationsItems.toggle()" [attr.aria-expanded]="!isCollapsedRegistrations">
+                    <a class="nav-link menu-item" >
+                        <i class="fas fa-database"></i>
+                        Cadastros
+                        <i class="fas fa-chevron-circle-down arrow"></i>
+                        
+                    </a>
+                </li>
+                <li class="nav-item submenu" #registrationsItems="ngbCollapse"  [(ngbCollapse)]="isCollapsedRegistrations">
+                    <a class="nav-link" routerLink="books/all">
+                        <i class="fas fa-user"></i>
+                        Usuários
+                    </a>
+                    <a class="nav-link" routerLink="books/all">
+                        <i class="fas fa-book"></i>
+                        Livros
+                    </a>
+                    <a class="nav-link" routerLink="books/all">
+                       <i class="fas fa-book"></i>
+                        Coleções
+                    </a>
+                    <a class="nav-link" routerLink="books/all">
+                        <i class="fas fa-book"></i>
+                         Catagorias
+                     </a>
+                </li>
+                <li class="nav-item submenu-control" (click)="collectionItems.toggle()" [attr.aria-expanded]="!isCollapsedCollection">
+                    <a class="nav-link menu-item" >
+                        <i class="fas fa-search"></i>
+                        Consulta
+                        <i class="fas fa-chevron-circle-down arrow"></i>
+                        
+                    </a>
+                </li>
+                <li class="nav-item submenu" #collectionItems="ngbCollapse"  [(ngbCollapse)]="isCollapsedCollection">
+                    <a class="nav-link" routerLink="books/all">
+                        <i class="fas fa-atlas"></i>
+                        Acervo Completo 
+                     </a>
+                    <a class="nav-link" routerLink="books/all">
+                       <i class="fas fa-book"></i>
+                        Coleções
+                    </a>
+                    <a class="nav-link" routerLink="books/all">
+                        <i class="fas fa-book"></i>
+                        Categorias
+                    </a> 
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>

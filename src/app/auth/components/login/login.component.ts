@@ -10,7 +10,7 @@ import { Router } from '@angular/router';
   styleUrls: ['./login.component.css']
 })
 export class LoginComponent implements OnInit {
-  bg: string  = 'url(assets/images/bg-login.jpg)'; 
+  bg: string  = 'url(assets/images/bg.jpg)'; 
   
   constructor(private route: Router) { }
 
@@ -18,6 +18,7 @@ export class LoginComponent implements OnInit {
   }
 
   onSubmit() {
+    window.localStorage.setItem('token', 'x')
     this.route.navigate([''])
   }
 }

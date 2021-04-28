@@ -1,0 +1,75 @@
+#nav-container {
+    position: relative;
+    padding-left: 5px;
+    width: 100%;
+    min-height: 100vh;
+    padding-right: 0px;
+}
+#nav-frame {
+    padding-left: 0;
+}
+#nav-header{
+    height:50px;
+    padding: 10px;
+    padding-top: 15px;
+    text-align: left;
+    font-weight: bolder;
+}
+#toggler {
+    color: #fff;
+    font-size: 15px;
+}
+
+#toggler > i {
+    cursor: pointer;
+}
+#user-details-frame{
+    color: #fff;
+    background: #000;
+    height: 55px;
+    padding: 10px;
+    font-weight: bolder;
+}
+#user-details-dropper-itens{
+    border-left: 5px solid #007bff;
+    padding: 0px;
+}
+#user-details-dropper-itens > a {
+    font-weight: bolder;
+    color: #fff;
+    cursor: pointer;
+}
+#user-details-dropper-itens > a:hover{
+    background: #107cfa;
+    color: #000;
+}
+.details{
+    padding-top: 10px;
+}
+.dropper{
+    cursor: pointer;
+}
+#nav-menu{
+    background: #1f2327;
+    width: 100%;
+    font-weight: bolder;
+    border-left: 15px solid #107cfa;
+}
+.nav-link{
+    color: #fff;
+
+}
+.submenu-control {
+    cursor: pointer;
+}
+.arrow {
+    float: right;
+    position: relative;
+    top: 3px;
+}
+.submenu-control:hover {
+    background: #003268;
+}
+.submenu{
+    background: #111416;
+}
